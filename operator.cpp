@@ -30,7 +30,6 @@ class Box
          box.length = this->length + b.length;
          box.breadth = this->breadth + b.breadth;
          box.height = this->height + b.height;
-         cout << box << endl;
          return box;
       }
    private:
