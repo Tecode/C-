@@ -3,14 +3,13 @@
 void swap(int *arr, int a, int b);
 
 void main() {
-    int array[6] = {100, 23, 68, 0, 87, 68};
+    int array[6] = {1, 23, 68, 0, 87, 68};
     int length = sizeof(array) / sizeof(int);
     for (int index = 0; index < length; ++ index) {
         int min = index;
         for (int index_col = index + 1; index_col < length; ++index_col) {
             if (array[min] > array[index_col]) {
                 min = index_col;
-                printf("%d - %d \n", min, index+1);
             }
         }
         if (min != index) {
